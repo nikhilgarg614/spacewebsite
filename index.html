@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Wonders of Space</title>
+        <style>
+        nav {
+      width: 100%;
+      border: solid 5px #3d0453;
+      text-align: center;
+      background: #4a0f58;
+      }
+
+      /*This selector is targeting the <ul> element within the <nav> element*/
+      /*This ensures that any other lists on the page are not impacted by this*/
+
+      nav ul {
+      display: inline-block; /*Comment:  this tells the browser to display the ul element inline (side by side), but it allows the list to retain it's block-level characteristics - more on that later.*/
+      margin: 0px; /*Comment: zero pixels of space in the margin (the space around an element.*/
+      padding: 0px; /*Comment: zero pixels of space between the element's border and its content*/
+      }
+
+      /*This selector is targeting the <li> elements that are within the <nav> element*/
+
+      nav li {
+      float: left;
+      list-style-type: none;  /*Comment:  this tells the browser to remove the bullet points that would normally be displayed in an unordered list.*/
+      }
+
+      /*This selector is targeting the links.  These are the <a> elements that are within the within the <nav> element */
+
+      nav a {
+      color: #ffffff;
+      text-decoration: none;  /*Comment:  this tells the browser to remove the underline that is normally displayed under a link.*/
+      display: block; /*the <a> tags are inline but in this case we need to be able to set a width so let's make them appear as block level*/
+      width: 100px;
+      padding: 8px 0px;
+      }
+
+      /*This selector targets the "hover" pseudo-class of the <a> element.  This css style will be activated when the mouse moves over the link.*/ 
+      nav a:hover {
+      background-color: #0c0;
+      color: #fff;
+      }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            
+        }
+        header {
+            /*background-color: #282c36;*/
+            background-image: url('https://cdn.pixabay.com/photo/2016/07/30/19/47/banner-1557850_1280.jpg');
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        /*.spacediv {
+            
+        }*/
+        article {
+            width: 500px;
+            height: 500px;
+            float: left;
+            overflow: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-bottom: 10px;
+        }
+    </style>
+    </head>
+    <!--style ="width: 1000px; margin:auto; background-color: #282c36;"-->
+    <body>
+        <header>
+            <h1>The Wonders of Space</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="printDesign.html">Print Design</a></li>
+                    <li><a href="webDesign.html">Web Design</a></li>
+                    <li><a href="biography.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="spacediv">
+            <article>
+                <h2>The Moon</h2>
+                <img
+                    src="https://spaceplace.nasa.gov/all-about-the-moon/en/the-moon-near-side.en.jpg"
+                    alt="The Moon">
+                <p>Earth has just one moon – a rocky, cratered place, roughly a
+                    quarter the size of Earth and an average of 238,855 miles
+                    away. The Moon can be seen with the naked eye most nights as
+                    it traces its 27-day orbit around our planet. It’s no wonder
+                    that we are fascinated. The Moon is Earth’s only natural
+                    satellite and one that we can easily see most nights.</p>
+                <p>What makes the Moon glow?
+                    The Moon does not shine with its own light. It simply
+                    reflects light coming from the Sun.</p>
+                <p>Why does it look like the Moon is changing shape?
+
+                    From Earth, it might look like the Moon is changing shape
+                    each night – from a tiny sliver to a half moon to a full
+                    moon and back again. What’s actually happening is that from
+                    our spot on Earth, we see different parts of the Moon lit up
+                    by the Sun as the Moon travels in its orbit.</p>
+            </article>
+            <article>
+                <h2>Mars Exploration</h2>
+                <img
+                    src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/downloadable_items/3/2/32322_mars-curiosity-rover-msl-horizon-sky-self-portrait-PIA19808-full.jpg?w=4841&h=2949&fit=clip&crop=faces%2Cfocalpoint"
+                    alt="Mars Surface">
+                <p>Mars is no place for the faint-hearted. It’s dry, rocky, and
+                    bitter cold. The fourth planet from the Sun, Mars, is one of
+                    Earth's two closest planetary neighbors (Venus is the
+                    other). Mars is one of the easiest planets to spot in the
+                    night sky — it looks like a bright red point of light.
+
+                    Despite being inhospitable to humans, robotic explorers —
+                    like NASA's Perseverance rover and Mars Reconnaissance
+                    Orbiter — serve as pathfinders to eventually get astronauts
+                    to the surface of the Red Planet.</p>
+                <p>Mars is one of the most explored bodies in our solar system,
+                    and it's the only planet where we've sent rovers to explore
+                    the alien landscape. NASA missions have found lots of
+                    evidence that Mars was much wetter and warmer, with a
+                    thicker atmosphere, billions of years ago.</p>
+                <p>Mars remains our horizon goal for human exploration because
+                    it is one of the only other places we know in the solar
+                    system where life may have existed. What we learn about the
+                    Red Planet will tell us more about our Earth’s past and
+                    future, and may help answer whether life exists beyond our
+                    home planet.</p>
+            </article>
+            <article>
+                <h2>Black Holes</h2>
+                <img
+                    src="https://exoplanets.nasa.gov/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSXBNRFV5TVRBeE1UTXROamhsWVMwME5XTTNMVGcyWlRRdFl6STROakl3T0RjMk56STRCam9HUlZRNkVHUnBjM0J2YzJsMGFXOXVTU0pmWVhSMFlXTm9iV1Z1ZERzZ1ptbHNaVzVoYldVOUltaHBaMmh5WlhOaWJHRmphMmh2YkdVeE5qQXdMbXB3WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmFHbG5hSEpsYzJKc1lXTnJhRzlzWlRFMk1EQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJQUJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--d2ac87c157e96ca62d5bf8a06b07113beec20dd5/highresblackhole1600.jpg"
+                    alt="Black Hole">
+                <p>A black hole is a dense, compact object whose gravitational
+                    pull is so strong that nothing can escape, not even light.
+                    Black holes are thought to result from the collapse of very
+                    massive stars. The gravity is so strong because their mass
+                    has been squeezed into a tiny space. The boundary in space
+                    around a black hole is called the "event horizon." </p>
+                <p>A black hole and its shadow were captured in an image for the
+                    first time (2019) in a historic feat by an international
+                    network of radio telescopes called the Event Horizon
+                    Telescope (EHT). EHT is an international collaboration whose
+                    support in the U.S. includes the National Science
+                    Foundation. The EHT image relied on light in radio
+                    wavelengths and shows the black hole's shadow against the
+                    backdrop of high-energy material around it.</p>
+                <p>A black hole does not have a surface in the usual sense of
+                    the word. There is simply a region, or boundary, in space
+                    around a black hole beyond which we cannot see. This
+                    boundary is called the "event horizon." Anything that comes
+                    within a black hole’s event horizon would be consumed
+                    because of the black hole’s unimaginably strong gravity.
+                    Stellar black holes have the mass of a dozen or so suns, but
+                    supermassive black holes, like the one first imaged by EHT,
+                    have the mass of many millions of suns.</p>
+            </article>
+            <article>
+                <h2>Halley's Comet</h2>
+                <img
+                    src="https://www.nasa.gov/wp-content/uploads/2019/09/stsci-j-p1945b-f1500x1500.jpg?w=1500"
+                    alt="Comet">
+                <p>Since ancient times, comets have fascinated sky-watchers, who
+                    often considered them divine omens. A Chinese historian
+                    recorded an apparition of Comet Halley as far back as 240
+                    BC, describing it as a “broom star.” The Babylonians and
+                    Romans also referenced the comet’s appearance, but perhaps
+                    its most famous depiction is in the Bayeux Tapestry, which
+                    commemorates the Norman Conquest of England in 1066. The
+                    tapestry shows King Harold and a crowd of fearful Englishmen
+                    pointing to Comet Halley as it looms in the sky.</p>
+                <p>Halley is often called the most famous comet because it
+                    marked the first time astronomers understood comets could be
+                    repeat visitors to our night skies. Astronomers have now
+                    linked the comet's appearances to observations dating back
+                    more than 2,000 years.
+
+                    Halley was last seen in Earth's skies in 1986 and was met in
+                    space by an international fleet of spacecraft. It will
+                    return in 2061 on its regular 76-year journey around the
+                    Sun.</p>
+                <p>Comet Halley moves backward (opposite to Earth's motion)
+                    around the Sun in a plane tilted 18 degrees to that of the
+                    Earth's orbit. Halley's backward, or retrograde, motion is
+                    unusual among short-period comets, as its greatest distance
+                    from the Sun (aphelion) is beyond the orbit of Neptune.</p>
+            </article>
+            <article>
+                <h2>Galaxies</h2>
+                <img
+                    src="https://science.nasa.gov/wp-content/uploads/2023/06/spiral-galaxy-jpg.webp"
+                    alt="Galaxy">
+                <p>Galaxies consist of stars, planets, and vast clouds of gas
+                    and dust, all bound together by gravity. The largest contain
+                    trillions of stars and can be more than a million
+                    light-years across. The smallest can contain a few thousand
+                    stars and span just a few hundred light-years. Most large
+                    galaxies have supermassive black holes at their centers,
+                    some with billions of times the Sun’s mass.</p>
+                <p>Galaxies come in a variety of shapes, mostly spirals and
+                    ellipticals, as well as those with less orderly appearances,
+                    usually dubbed irregular.
+
+                    Most galaxies are between 10 billion and 13.6 billion years
+                    old. Some are almost as old as the universe itself, which
+                    formed around 13.8 billion years ago. Astronomers think the
+                    youngest known galaxy formed approximately 500 million years
+                    ago.</p>
+                <p>Our home galaxy is called the Milky Way. It’s a spiral galaxy
+                    with a disk of stars spanning more than 100,000 light-years.
+                    Earth is located along one of the galaxy’s spiral arms,
+                    about halfway from the center. Our solar system takes about
+                    240 million years to orbit the Milky Way just once.</p>
+            </article>
+            <article>
+                <h2>Space Travel</h2>
+                <img
+                    src="https://www.nasa.gov/wp-content/uploads/static/60counting/img/buzz.jpg"
+                    alt="Astronaut in Space">
+                <p>The Cold War between the United States and former Soviet
+                    Union gave birth to the space race and an unprecedented
+                    program of scientific exploration. The Soviets sent the
+                    first person into space on April 12, 1961. In response,
+                    President John F. Kennedy challenged our nation “to
+                    achieving the goal, before this decade is out, of landing a
+                    man on the Moon and returning him safely to earth.” It took
+                    eight years and three NASA programs -- Mercury, Gemini and
+                    Apollo – but the United States got to the moon.</p>
+                <p>Exactly eight years, one month and 26 days after President
+                    Kennedy challenged Americans to reach for the Moon, Project
+                    Apollo landed the first humans on the lunar surface and
+                    returned them safely to Earth. The Apollo program also
+                    developed technology to meet other national interests in
+                    space, conducted scientific exploration of the Moon, and
+                    developed humanity’s capability to work in the lunar
+                    environment. </p>
+                <p>The Gemini program primarily tested equipment and mission
+                    procedures and trained astronauts and ground crews for
+                    future Apollo missions to the Moon. There were many goals
+                    NASA had for Gemini. NASA selected “Gemini” because the word
+                    is Latin for “twins,” and the Gemini was a capsule built for
+                    two.</p>
+            </article>
+        </div>
+        <form
+            style="background-color: #282c36; color: white; clear: both; width: 25%; margin: 20px auto; padding: 20px; text-align: center;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="planet">Favorite Planet:</label>
+            <input list="planets" id="planet" name="planet">
+
+            <datalist id="planets">
+                <option value="Mercury"></option>
+                <option value="Venus"></option>
+                <option value="Earth"></option>
+                <option value="Mars"></option>
+                <option value="Jupiter"></option>
+                <option value="Saturn"></option>
+                <option value="Uranus"></option>
+                <option value="Neptune"></option>
+            </datalist><br><br>
+
+            <label for="date">Date of Visit:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <input type="submit" onclick="alert('Thank you!');" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <button onclick="changeBgImage()"
+            style="margin: 20px auto; padding: 10px 15px; font-size: 16px;">
+            Change Space Background
+        </button>
+        <script>
+        function changeBgImage() {
+            // List of space images
+            const spaceImages = [
+                "https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg",
+                "https://plus.nasa.gov/wp-content/uploads/2023/08/hubble-30th-westerlund2.jpg?w=1024",
+                "https://cdn.mos.cms.futurecdn.net/ZxMaZq2VfVKj7Lbo5y7dLR.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXYDuTMhMiga8vWCrFOyz-vlDSwEP2PzWqUQ&s",
+                "https://science.nasa.gov/wp-content/uploads/2023/06/webb-flickr-52212049510-bb98d2eab6-5k-jpg.webp?w=1024",
+                "https://www.nasa.gov/wp-content/uploads/2023/01/webb-tarantula-neb.png?w=1536",
+                "https://science.nasa.gov/wp-content/uploads/2023/06/webb-flickr-52259221868-30e1c78f0c-4k-jpg.webp"
+            ];
+    
+            // Pick a random image
+            const randomIndex = Math.floor(Math.random() * spaceImages.length);
+            const randomImage = spaceImages[randomIndex];
+    
+            // Apply the new background image
+            document.body.style.backgroundImage = `url('${randomImage}')`;
+            document.body.style.backgroundSize = "cover"; // Ensures the image covers the screen
+            document.body.style.backgroundPosition = "center"; // Centers the image
+            document.body.style.backgroundRepeat = "no-repeat"; // Prevents tiling
+        }
+    </script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.backgroundColor = "#ddd";
+        });
+    </script>
+    </body>
+</html>
