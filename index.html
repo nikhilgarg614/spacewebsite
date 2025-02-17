@@ -94,6 +94,7 @@
             </nav>
 
         </header>
+        <!-- container for all the articles -->
         <div class="spacediv">
             <article>
                 <h2>The Moon</h2>
@@ -260,6 +261,8 @@
                     two.</p>
             </article>
         </div>
+
+
         <form
             style="background-color: #282c36; color: white; clear: both; width: 25%; margin: 20px auto; padding: 20px; text-align: center;">
             <label for="name">Name:</label>
@@ -289,9 +292,10 @@
             style="margin: 20px auto; padding: 10px 15px; font-size: 16px;">
             Change Space Background
         </button>
+    <!-- change background script-->
         <script>
         function changeBgImage() {
-            // List of space images
+            //list of space images
             const spaceImages = [
                 "https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg",
                 "https://plus.nasa.gov/wp-content/uploads/2023/08/hubble-30th-westerlund2.jpg?w=1024",
@@ -302,22 +306,18 @@
                 "https://science.nasa.gov/wp-content/uploads/2023/06/webb-flickr-52259221868-30e1c78f0c-4k-jpg.webp"
             ];
     
-            // Pick a random image
+            // 
+            //random image picker
             const randomIndex = Math.floor(Math.random() * spaceImages.length);
             const randomImage = spaceImages[randomIndex];
     
-            // Apply the new background image
+            //change background image
             document.body.style.backgroundImage = `url('${randomImage}')`;
             document.body.style.backgroundSize = "cover"; // Ensures the image covers the screen
             document.body.style.backgroundPosition = "center"; // Centers the image
             document.body.style.backgroundRepeat = "no-repeat"; // Prevents tiling
         }
     </script>
-
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.body.style.backgroundColor = "#ddd";
-        });
-    </script>
+    
     </body>
 </html>
